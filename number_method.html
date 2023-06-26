@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Methods</title>
+</head>
+<body>
+    <script>
+        const x=14.2334
+        // to print only specific number of digits after decimal points use toFixed()
+        document.write(`${x.toFixed(2)} <br>`)
+        document.write(`${x.toFixed(3)} <br>`)
+
+        //to print how many digits to show as a whole use toPrecision()
+        document.write(`${x.toPrecision(2)} <br>`)
+        document.write(`${x.toPrecision(3)} <br>`)
+
+        //tpExponential()
+        document.write(`${x.toExponential(2)}<br>`)
+        document.write(`${x.toExponential(3)}<br>`)
+
+        //to convert string into number use the following method
+        //Number()
+        //parseInt()->returns inly integer value
+        //parseFloat()-> returns both integer and real/floating number
+
+        const y= Number("100")
+        document.write(typeof(y))
+        document.write('<br>')
+        document.write(parseInt("30.38"))
+        document.write('<br>')
+        document.write(parseFloat("30.3932"))
+        // /document.write(parseFloat("hekllo world"))
+    </script>
+    
+</body>
+</html>

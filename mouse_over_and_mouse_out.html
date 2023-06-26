@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseover and mouseout</title>
+</head>
+
+<body>
+
+    <body>
+        <div style="height: 300px;width:300px;background-color:blueviolet;" onmouseover="demoin()"
+            onmouseout="demoOut()"></div>
+        <h2 id="result"></h2>
+
+        <script>
+            function demoin() {
+                document.querySelector('#result').innerHTML = 'this is mouse over'
+            }
+            function demoOut() {
+                document.querySelector('#result').innerHTML = 'mouse is out  of element'
+            }
+        </script>
+
+    </body>
+
+</body>
+
+</html>

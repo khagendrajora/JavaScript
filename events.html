@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <pre>
+        onclick -> when a html elemment is clicked
+        ondblclick ->when a html element is double clicked
+        onsumbit -> when a form is sumbit
+        onchange-> when a input value change
+        onload-> when a page is load
+        onmouseover-> when  mouse is hover over the html element
+        onmouseout-> when a mouse is move over an element
+        onkeyup-> when a keyword key is pressed
+        onkeydoum -> similar to keyup
+    </pre>
+<button onclick="demo()"> click to see the result</button>
+<h2 id="result"></h2>
+<script>
+    function demo(){
+        // document.write(new Date())
+        document.getElementById('result').innerHTML=new Date()
+    }
+</script>
+</body>
+</html>

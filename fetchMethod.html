@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch method</title>
+</head>
+<body>
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/posts')  //this is used to fetch API data througth the url with get request
+        .then(res=>res.json())                              //it takes res as parameter and calls json() to parse response data to JSON ,it also returns a promise
+        .then(response=>console.log(response))      //The second .then() method is chained to the Promise returned by .json(). It takes the parsed JSON data as its argument and logs it to the console using console.log(). This is where you can see the retrieved data from the API.
+        .catch(err=>console.log(err))
+    </script>
+    
+</body>
+</html>

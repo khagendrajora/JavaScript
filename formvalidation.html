@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <!--bootstrap css link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<style>
+    /* .conatiner {
+        background-color: aqua;
+    }*/
+
+    /* .mb-3 {
+        background-color: aquamarine;
+
+    } */
+</style>
+
+<body>
+    <div class="container">
+        <div class="col d-flex justify-content-center">
+            <div class="col-md-3">
+                <form action="" class="shadow-lg p-3">
+                    <h2 class="text-center text-muted">Register Form</h2>
+
+                    <div class="mb-2">
+                        <label for="firstname">firstName</label>
+                        <input type="text" name="fname" id="firstname" placeholder="enter ur firstname"
+                            class="form-control " onkeyup="validFname()">
+                        <span id="fnameMsg"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="lastname">lastName</label>
+                        <input type="text" name="lname" id="lastname" placeholder="enter ur last_name"
+                            class="form-control" onkeyup="validlname()">
+                        <span id="lnameMsg"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email" placeholder="enter ur email" class="form-control"
+                            onkeyup="validemail()">
+                        <span id="emailmsg"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password">password</label>
+                        <input type="password" name="password" id="password" placeholder="enter ur password "
+                            class="form-control" onkeyup="validpassword()">
+                        <span id="passwordMsg"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Cpassword">Confirm password</label>
+                        <input type="password" name="cpassword" id="Cpassword" placeholder="enter ur password "
+                            class="form-control" onkeyup="Cvalidpassword()">
+                        <span id="CpasswordMsg"></span>
+                    </div>
+                    <div class="mb-3">
+                        <input type="submit" class="btn btn-primary" value="register">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="formvalidation.js"></script>
+
+</body>
+
+</html>

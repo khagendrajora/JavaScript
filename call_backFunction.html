@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call back function</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        let news=[
+            {newsTitle:'First Title',content:'this is a callback function'},
+            {newsTitle:'Second title',content:'this is a second content of news'}
+        ]
+        //define the function showNews()
+        const showNews=()=>{
+            setTimeout(()=>{
+                let result=""
+                news.forEach((post)=>{
+                    result+=`<li>${post.newsTitle}
+                        <ul>
+                            <li>${post.content}</li>
+                        </ul>
+                        </li>`
+                })
+                document.querySelector('div').innerHTML=result
+            },2000)
+        }
+        // //define function addNews()
+        // const addNews=(newdata)=>{
+        //     setTimeout(()=>{
+        //         news.push(newdata)
+            
+        // },2000)  
+        // }      
+        // //call the function showNews()
+        // addNews({newsTitle:'Third Title',content:'this is added from the push method in the array'})
+        // showNews()
+
+        //define the function addNews() with call back function
+        const addNews=(newsdata,callbackfun)=>{
+            setTimeout(()=>{
+                news.push(newsdata)
+                callbackfun()       //Here a  call back function is equal to show news.
+            },1000)
+        }
+
+
+        addNews({newsTitle:'Third Title',content:'this is added from the push method in the array'},showNews)
+    </script>
+</body>
+</html>

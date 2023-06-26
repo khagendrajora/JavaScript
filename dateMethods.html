@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date methods</title>
+</head>
+<body>
+    <script>
+        const date= new Date()
+        document.write(`${date} <br>`)
+        
+        // //to print only year use getFullYear()
+        document.write(`${date.getFullYear()} <br>`)
+
+        //to get month use getDate() ->returns 0-11
+      document.write(`${date.getMonth()}<br>`)
+
+      //to get fate use getDate()->returns 1-31
+      document.write(`${date.getDate()}<br>`)
+
+      //to get date use getDay()->returns 0-6
+      document.write(`${date.getDay()}<br>`)
+
+      //to get hour use getHour()-> returns 0-23
+      document.write(`${date.getHours()}<br>`)
+
+        //to get minute use getMinutes()-> returns 0-59
+        document.write(`${date.getMinutes()}<br>`)
+
+          //to get second use getSeconds()-> returns 0-59
+        document.write(`${date.getSeconds()}<br>`)
+
+        //to get milisecond use getMilisecond()-> returns 0-999
+        document.write(`${date.getMilliseconds()}<br>`)
+
+        document.write(`${date.toLocaleTimeString()} <br>`)
+        document.write(`${date.toLocaleDateString()} <br>`)
+    </script>
+    
+</body>
+</html>
